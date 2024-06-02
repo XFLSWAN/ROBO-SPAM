@@ -1,7 +1,7 @@
 from telethon import events, Button
 from config import X1, SUDO_USERS, CMD_HNDLR as hl
 
-HELP_STRING = f"**✦ ᴄʟɪᴄᴋ ᴏɴ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴꜱ ꜰᴏʀ xsᴘᴀᴍ ʜᴇʟᴘ ⏤͟͟͞͞★**"
+HELP_STRING = f"**✦ ᴄʟɪᴄᴋ ᴏɴ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴꜱ ꜰᴏʀ sᴛʀᴀɴɢᴇʀ sᴘᴀᴍ ʜᴇʟᴘ ⏤͟͟͞͞★**"
 
 HELP_BUTTON = [
     [
@@ -12,18 +12,18 @@ HELP_BUTTON = [
         Button.inline("ᴇxᴛʀᴀ", data="extra")
     ],
     [
-        Button.url("ᴜᴘᴅᴀᴛᴇ", "https://t.me/roy_editx"),
-        Button.url("sᴜᴘᴘᴏʀᴛ", "https://t.me/the_friendz")
+        Button.url("ᴜᴘᴅᴀᴛᴇ", "https://t.me/SHIVANSH474"),
+        Button.url("sᴜᴘᴘᴏʀᴛ", "https://t.me/mastiwithfriendsxd")
     ]
 ]
 
 
-@X1.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
+@X1.on(events.NewMessage(incoming=True, pattern=r"\%sshelp(?: |$)(.*)" % hl))
 async def help(event):
     try:
         await event.client.send_file(
             event.chat_id,
-            "https://graph.org/file/cacbdddee77784d9ed2b7.jpg",
+            "https://graph.org/file/29836fd9daa68203f6a0c.jpg",
             caption=HELP_STRING,
             buttons=HELP_BUTTON
         )
@@ -35,7 +35,7 @@ extra_msg = """
 **✦  ᴇxᴛʀᴀ ᴄᴏᴍᴍᴀɴᴅꜱ ♥︎**
 
 ❖ 𝗨𝘀𝗲𝗿𝗕𝗼𝘁 ➥ **ᴜꜱᴇʀʙᴏᴛ ᴄᴍᴅꜱ ⏤͟͟͞͞★**
-  ● /ping 
+  ● /sping 
   ● /reboot
   ● /sudo <reply to user> ➠ Owner Cmd
   ● /logs ➠ Owner Cmd
