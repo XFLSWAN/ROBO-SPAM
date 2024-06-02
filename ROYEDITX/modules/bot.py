@@ -8,7 +8,7 @@ from telethon import events
 from datetime import datetime
 
 
-@X1.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
+@X1.on(events.NewMessage(incoming=True, pattern=r"\%ssping(?: |$)(.*)" % hl))
 async def ping(e):
     if e.sender_id == enums.ChatMemberStatus.ADMINISTRATOR or enums.ChatMemberStatus.OWNER:
         start = datetime.now()
